@@ -12,227 +12,46 @@
   </head>
 
   <body class="bg-gray-100 text-gray-900 font-sans text-[16px]">
-    <!-- <div class="container"> -->
-      <div class="relative h-[15vh] w-full">
-        <img src="fig/nav.png" id="nav" alt="nav"  class="w-full h-full object-cover"/>
-        <header class="absolute top-0 left-0 w-full h-full flex justify-between items-center px-16">
-          <h2 class="text-white text-xl font-bold">Devjobs</h2>
+    <div class="relative h-[15vh] w-full">
+      <img src="fig/nav.png" id="nav" alt="nav" class="w-full h-full" />
+      <header
+        class="absolute top-0 left-0 w-full h-full flex justify-between items-center px-16"
+      >
+        <h2 class="text-white text-xl font-bold">Devjobs</h2>
         <div class="flex items-center gap-4 text-white">
           <span>🌞</span>
           <span class="bg-white w-10 h-5 rounded-full relative">
-            <span class="absolute left-1 top-0.5 w-4 h-4 rounded-full bg-gray-800"></span>
+            <span
+              class="absolute left-1 top-0.5 w-4 h-4 rounded-full bg-gray-800"
+            ></span>
           </span>
           <span>🌙</span>
         </div>
-        </header>
+      </header>
+      <div
+        class="absolute top-[80%] left-1/2 -translate-x-1/2 w-4/5 flex justify-between bg-white rounded-[1.2rem] p-4 gap-8"
+      >
+        <div class="input-group">
+          <i class="fa fa-search"></i>
+          <input
+            type="text"
+            placeholder="Filter by title, companies, expertise..."
+          />
+        </div>
 
-        <!-- <div class="search-bar">
-          <div class="input-group">
-            <i class="fa fa-search"></i>
-            <input
-              type="text"
-              placeholder="Filter by title, companies, expertise..."
-            />
-          </div>
+        <div class="input-group">
+          <i class="fa fa-map-marker-alt"></i>
+          <input type="text" placeholder="Filter by location..." />
+        </div>
 
-          <div class="input-group">
-            <i class="fa fa-map-marker-alt"></i>
-            <input type="text" placeholder="Filter by location..." />
-          </div>
-
-          <div class="filter-group">
-            <label> <input type="checkbox" /> Full Time Only </label>
-            <button>Search</button>
-          </div>
+        <div class="filter-group">
+          <label> <input type="checkbox" /> Full Time Only </label>
+          <button>Search</button>
         </div>
       </div>
-      <div class="job-grid">
-        <div class="job-card">
-          <div class="company-logo">
-            <img src="fig/logo.png" alt="Company Logo" />
-          </div>
+    </div>
 
-          <div class="job-meta">
-            <span class="posted-time">2d ago</span>
-            <span class="dot">•</span>
-            <span class="job-type">Full Time</span>
-          </div>
-
-          <h3 class="job-title">Senior Application Engineer</h3>
-          <p class="company-name">Office Lite</p>
-          <p class="location">Japan</p>
-        </div>
-        <div class="job-card">
-          <div class="company-logo">
-            <img src="fig/logo.png" alt="Company Logo" />
-          </div>
-
-          <div class="job-meta">
-            <span class="posted-time">2d ago</span>
-            <span class="dot">•</span>
-            <span class="job-type">Full Time</span>
-          </div>
-
-          <h3 class="job-title">Senior Application Engineer</h3>
-          <p class="company-name">Office Lite</p>
-          <p class="location">Japan</p>
-        </div>
-        <div class="job-card">
-          <div class="company-logo">
-            <img src="fig/logo.png" alt="Company Logo" />
-          </div>
-
-          <div class="job-meta">
-            <span class="posted-time">2d ago</span>
-            <span class="dot">•</span>
-            <span class="job-type">Full Time</span>
-          </div>
-
-          <h3 class="job-title">Senior Application Engineer</h3>
-          <p class="company-name">Office Lite</p>
-          <p class="location">Japan</p>
-        </div>
-        <div class="job-card">
-          <div class="company-logo">
-            <img src="fig/logo.png" alt="Company Logo" />
-          </div>
-
-          <div class="job-meta">
-            <span class="posted-time">2d ago</span>
-            <span class="dot">•</span>
-            <span class="job-type">Full Time</span>
-          </div>
-
-          <h3 class="job-title">Senior Application Engineer</h3>
-          <p class="company-name">Office Lite</p>
-          <p class="location">Japan</p>
-        </div>
-        <div class="job-card">
-          <div class="company-logo">
-            <img src="fig/logo.png" alt="Company Logo" />
-          </div>
-
-          <div class="job-meta">
-            <span class="posted-time">2d ago</span>
-            <span class="dot">•</span>
-            <span class="job-type">Full Time</span>
-          </div>
-
-          <h3 class="job-title">Senior Application Engineer</h3>
-          <p class="company-name">Office Lite</p>
-          <p class="location">Japan</p>
-        </div>
-        <div class="job-card">
-          <div class="company-logo">
-            <img src="fig/logo.png" alt="Company Logo" />
-          </div>
-
-          <div class="job-meta">
-            <span class="posted-time">2d ago</span>
-            <span class="dot">•</span>
-            <span class="job-type">Full Time</span>
-          </div>
-
-          <h3 class="job-title">Senior Application Engineer</h3>
-          <p class="company-name">Office Lite</p>
-          <p class="location">Japan</p>
-        </div>
-        <div class="job-card">
-          <div class="company-logo">
-            <img src="fig/logo.png" alt="Company Logo" />
-          </div>
-
-          <div class="job-meta">
-            <span class="posted-time">2d ago</span>
-            <span class="dot">•</span>
-            <span class="job-type">Full Time</span>
-          </div>
-
-          <h3 class="job-title">Senior Application Engineer</h3>
-          <p class="company-name">Office Lite</p>
-          <p class="location">Japan</p>
-        </div>
-        <div class="job-card">
-          <div class="company-logo">
-            <img src="fig/logo.png" alt="Company Logo" />
-          </div>
-
-          <div class="job-meta">
-            <span class="posted-time">2d ago</span>
-            <span class="dot">•</span>
-            <span class="job-type">Full Time</span>
-          </div>
-
-          <h3 class="job-title">Senior Application Engineer</h3>
-          <p class="company-name">Office Lite</p>
-          <p class="location">Japan</p>
-        </div>
-        <div class="job-card">
-          <div class="company-logo">
-            <img src="fig/logo.png" alt="Company Logo" />
-          </div>
-
-          <div class="job-meta">
-            <span class="posted-time">2d ago</span>
-            <span class="dot">•</span>
-            <span class="job-type">Full Time</span>
-          </div>
-
-          <h3 class="job-title">Senior Application Engineer</h3>
-          <p class="company-name">Office Lite</p>
-          <p class="location">Japan</p>
-        </div>
-        <div class="job-card">
-          <div class="company-logo">
-            <img src="fig/logo.png" alt="Company Logo" />
-          </div>
-
-          <div class="job-meta">
-            <span class="posted-time">2d ago</span>
-            <span class="dot">•</span>
-            <span class="job-type">Full Time</span>
-          </div>
-
-          <h3 class="job-title">Senior Application Engineer</h3>
-          <p class="company-name">Office Lite</p>
-          <p class="location">Japan</p>
-        </div>
-        <div class="job-card">
-          <div class="company-logo">
-            <img src="fig/logo.png" alt="Company Logo" />
-          </div>
-
-          <div class="job-meta">
-            <span class="posted-time">2d ago</span>
-            <span class="dot">•</span>
-            <span class="job-type">Full Time</span>
-          </div>
-
-          <h3 class="job-title">Senior Application Engineer</h3>
-          <p class="company-name">Office Lite</p>
-          <p class="location">Japan</p>
-        </div>
-        <div class="job-card">
-          <div class="company-logo">
-            <img src="fig/logo.png" alt="Company Logo" />
-          </div>
-
-          <div class="job-meta">
-            <span class="posted-time">2d ago</span>
-            <span class="dot">•</span>
-            <span class="job-type">Full Time</span>
-          </div>
-
-          <h3 class="job-title">Senior Application Engineer</h3>
-          <p class="company-name">Office Lite</p>
-          <p class="location">Japan</p>
-        </div>
-      </div>
-      <div class="button-wrapper">
-        <button id="load-more">Load More</button>
-      </div>
-    </div> -->
-
+    
     <script>
       const toggle = document.getElementById("toggle-theme");
       const root = document.documentElement;

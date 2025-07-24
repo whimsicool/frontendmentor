@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -11,23 +11,22 @@
     <title>Devjobs</title>
   </head>
 
-  <body>
-    <div class="container">
-      <div class="nav-wrapper">
-        <img src="fig/nav.png" id="nav" alt="nav" />
-        <header>
-          <h2>Devjobs</h2>
-          <div class="theme">
-            <span>🌞</span>
-            <label class="switch">
-              <input type="checkbox" id="toggle-theme" />
-              <span class="slider"></span>
-            </label>
-            <span>🌙</span>
-          </div>
+  <body class="bg-gray-100 text-gray-900 font-sans text-[16px]">
+    <!-- <div class="container"> -->
+      <div class="relative h-[15vh] w-full">
+        <img src="fig/nav.png" id="nav" alt="nav"  class="w-full h-full object-cover"/>
+        <header class="absolute top-0 left-0 w-full h-full flex justify-between items-center px-16">
+          <h2 class="text-white text-xl font-bold">Devjobs</h2>
+        <div class="flex items-center gap-4 text-white">
+          <span>🌞</span>
+          <span class="bg-white w-10 h-5 rounded-full relative">
+            <span class="absolute left-1 top-0.5 w-4 h-4 rounded-full bg-gray-800"></span>
+          </span>
+          <span>🌙</span>
+        </div>
         </header>
 
-        <div class="search-bar">
+        <!-- <div class="search-bar">
           <div class="input-group">
             <i class="fa fa-search"></i>
             <input
@@ -232,7 +231,7 @@
       <div class="button-wrapper">
         <button id="load-more">Load More</button>
       </div>
-    </div>
+    </div> -->
 
     <script>
       const toggle = document.getElementById("toggle-theme");

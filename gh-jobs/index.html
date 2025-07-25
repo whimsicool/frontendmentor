@@ -31,7 +31,7 @@
         </div>
       </header>
       <div
-        class="absolute top-[80%] left-1/2 -translate-x-1/2 w-4/5 flex justify-between bg-white rounded-[1.2rem] p-4 gap-8"
+        class="absolute top-4/5 left-1/2 -translate-x-1/2 w-4/5 flex justify-between bg-white rounded-[1.2rem] p-4 gap-8"
       >
         <div class="px-8 py-2">
           <i class="fa fa-search"></i>
@@ -186,17 +186,6 @@
       </div>
     </div>
 
-    <script>
-      const toggle = document.getElementById("toggle-theme");
-      const root = document.documentElement;
-
-      toggle.addEventListener("change", () => {
-        if (toggle.checked) {
-          root.setAttribute("data-theme", "dark");
-        } else {
-          root.removeAttribute("data-theme");
-        }
-      });
-    </script>
+    
   </body>
 </html>
